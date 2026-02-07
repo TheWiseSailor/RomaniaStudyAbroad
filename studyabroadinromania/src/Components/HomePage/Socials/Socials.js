@@ -15,10 +15,10 @@ const Social = () => {
       <div className='SocialContactContainer' data-aos="fade-up" data-aos-duration="3000">
         <h2>Contact Me!</h2>
         <div className="social-icons">
-          <a href="https://www.instagram.com/_.holllayyy/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/_the_noodle_lover_/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" />
           </a>
-          <a href="mailto:Hollylynne16@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:jrr2238@uncw.edu" target="_blank" rel="noopener noreferrer">
             <img src={mailIcon} alt="Email" />
           </a>
 

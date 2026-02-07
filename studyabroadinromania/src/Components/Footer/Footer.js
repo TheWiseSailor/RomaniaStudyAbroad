@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className={`footer ${isContactClicked ? 'contact' : ''}`}>
-      <p className='ft'>Holly.CO &copy; All rights reserved.</p>
+      <p className='ft'>JR.DEV &copy; All rights reserved.</p>
     </footer>
   );
 };

@@ -1,15 +1,32 @@
 .portfoliocontainer {
   margin: 0 auto;
   text-align: center;
-margin-top: -24px;
-  background-color: #d9bfb1;
-
+  margin-top: -24px;
+  background-color: #d9bfb1; /* That nice tan/coffee color */
   height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* Adds a scrollbar if the text is too long for the screen */
 }
 
 .portfoliotext {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 800px;
+  padding: 40px;
+  background-color:#AE887B; /* Subtle overlay to make text pop */
+  border-radius: 15px;
+  color: #ffffff; /* Dark coffee color for the text */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.description-box p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1.1rem;
 }
