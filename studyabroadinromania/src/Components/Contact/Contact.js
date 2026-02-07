@@ -1,20 +1,22 @@
-// Contact.js
 import React from 'react';
 import './Contact.css'
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
-  const [state, handleSubmit] = useForm("xayroggl");
+  // Use the environment variable here
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORMSPREE_ID);
 
   if (state.succeeded) {
-    return <div className='SuccessMessageBackground'><p className=' SuccessMessage'>Success!<br/> I will be in touch!</p></div>;
+    return (
+      <div className='SuccessMessageBackground'>
+        <p className='SuccessMessage'>Success!<br/> I will be in touch!</p>
+      </div>
+    );
   }
 
   return (
     <div className="contact-container-form-page">
-      
-      <div className="contact-form-container-page" data-aos="fade-down"
-              data-aos-duration="3000">
+      <div className="contact-form-container-page" data-aos="fade-down" data-aos-duration="3000">
         <h2 className="ContactHomePageHeader-container-page">Contact</h2>
         <form onSubmit={handleSubmit} className="form-container">
    
@@ -71,12 +73,6 @@ function Contact() {
         </form>
       </div>
     </div>
-  );
-}
-
-function App() {
-  return (
-    <Contact />
   );
 }
 
