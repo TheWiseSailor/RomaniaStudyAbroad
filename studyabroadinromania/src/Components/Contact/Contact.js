@@ -3,9 +3,8 @@ import './Contact.css';
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
-  // The '||' acts as a backup so the app doesn't crash if the .env isn't found
-  const formKey = process.env.REACT_APP_FORMSPREE_ID || maqdyeqr;
-  const [state, handleSubmit] = useForm(formKey);
+  // Hardcoded ID - No .env needed, no more "undefined" crashes
+  const [state, handleSubmit] = useForm("maqdyeqr");
 
   if (state.succeeded) {
     return (
