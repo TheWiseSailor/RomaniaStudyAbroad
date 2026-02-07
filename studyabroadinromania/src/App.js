@@ -3,20 +3,25 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomeRender from './Components/HomeRender';
-import Contact from '../src/Components/Contact/Contact'; 
-import Portfolio from '../src/Components/Portfolio/Portfolio'; 
+import Contact from './Components/Contact/Contact'; 
+import Portfolio from './Components/Portfolio/Portfolio'; 
 
 const App = () => {
   return (
-    <Router>
+    /* Add basename so it knows it lives in the RomaniaStudyAbroad folder */
+    <Router basename="/RomaniaStudyAbroad">
       <div>
         <Header />
         <Routes> 
-          <Route path="/Holly.CO" element={<HomeRender />} />
+          {/* Default home route */}
           <Route path="/" element={<HomeRender />} /> 
+          
+          {/* Specific page routes */}
           <Route path="/contact" element={<Contact />} /> 
           <Route path="/portfolio" element={<Portfolio />} /> 
 
+          {/* Catch-all: If someone goes to a broken link, send them Home */}
+          <Route path="*" element={<HomeRender />} />
         </Routes>
         <Footer />
       </div>
