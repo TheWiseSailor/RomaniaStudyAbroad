@@ -5,7 +5,7 @@ import './Portfolio.css';
 function App() {
   return (
     <div className="portfoliocontainer">
-      <h1 className='portfoliotext'>Will add a portfolio once projects are made</h1>
+      <h1 className='portfoliotext'></h1>
     </div>
   );
 }

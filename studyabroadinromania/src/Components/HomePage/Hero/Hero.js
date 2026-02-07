@@ -9,9 +9,9 @@ const HomePage = () => {
       <div className='HomePagePrimary'>
         <section className='Section1'>
           <img src={Holly} alt="Holly" className="Holly1" />
-          <p className='P1'>"Fearless. Strong. Independent." - Taylor Swift</p>
+          <p className='P1'>"Try not to become a man of success, but rather try to become a man of value."</p>
         </section>
-        <p className='P2'>"Fearless. Strong. Independent." <br/> - Taylor Swift</p>
+        <p className='P2'>"Try not to become a man of success, but rather try to become a man of value." <br/> - Taylor Swift</p>
       </div>
     </div>
   );
