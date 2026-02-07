@@ -2,7 +2,7 @@
   "name": "studyabroadinromania",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thewisesailor.github.io/RomaniaStudyAbroad/",
+  "homepage": "https://TheWiseSailor.github.io/RomaniaStudyAbroad",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
