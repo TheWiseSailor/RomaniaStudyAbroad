@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RomaniaStudyAbroad/static/css/main.0ff73f64.css",
+    "main.js": "/RomaniaStudyAbroad/static/js/main.9849c6a7.js",
+    "static/js/453.8a1f1cee.chunk.js": "/RomaniaStudyAbroad/static/js/453.8a1f1cee.chunk.js",
+    "static/media/Holly2.png": "/RomaniaStudyAbroad/static/media/Holly2.92796fd7ffbdc44725a4.png",
+    "static/media/Holly.png": "/RomaniaStudyAbroad/static/media/Holly.dd3742ee71ddaf679bd9.png",
+    "static/media/logo.png": "/RomaniaStudyAbroad/static/media/logo.624ffe461005f0d18cf2.png",
+    "index.html": "/RomaniaStudyAbroad/index.html",
+    "main.0ff73f64.css.map": "/RomaniaStudyAbroad/static/css/main.0ff73f64.css.map",
+    "main.9849c6a7.js.map": "/RomaniaStudyAbroad/static/js/main.9849c6a7.js.map",
+    "453.8a1f1cee.chunk.js.map": "/RomaniaStudyAbroad/static/js/453.8a1f1cee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ff73f64.css",
+    "static/js/main.9849c6a7.js"
+  ]
+}
