@@ -19,7 +19,7 @@ const Social = () => {
             <img src={instagramIcon} alt="Instagram" />
           </a>
           <a href="mailto:jrr2238@uncw.edu" target="_blank" rel="noopener noreferrer">
-            <img src={mailIcon} alt="Email" />
+
           </a>
 
         </div>
