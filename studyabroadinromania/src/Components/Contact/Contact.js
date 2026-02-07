@@ -1,10 +1,11 @@
 import React from 'react';
-import './Contact.css'
+import './Contact.css';
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
-  // Use the environment variable here
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORMSPREE_ID);
+  // The '||' acts as a backup so the app doesn't crash if the .env isn't found
+  const formKey = process.env.REACT_APP_FORMSPREE_ID || "xayroggl";
+  const [state, handleSubmit] = useForm(formKey);
 
   if (state.succeeded) {
     return (
@@ -19,7 +20,6 @@ function Contact() {
       <div className="contact-form-container-page" data-aos="fade-down" data-aos-duration="3000">
         <h2 className="ContactHomePageHeader-container-page">Contact</h2>
         <form onSubmit={handleSubmit} className="form-container">
-   
           <input
             id="name"
             type="text"
@@ -56,20 +56,13 @@ function Contact() {
             placeholder="Your Message"
             required
           />
+          
           <button type="submit" disabled={state.submitting} className="button-container-page">
             Submit
           </button>
      
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
-          />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <ValidationError prefix="Message" field="message" errors={state.errors} />
         </form>
       </div>
     </div>
