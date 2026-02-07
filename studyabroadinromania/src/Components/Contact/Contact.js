@@ -4,8 +4,8 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
   // The '||' acts as a backup so the app doesn't crash if the .env isn't found
-  const formKey = process.env.REACT_APP_FORMSPREE_ID;
-  const [state, handleSubmit] = useForm(formKey) || maqdyeqr;
+  const formKey = process.env.REACT_APP_FORMSPREE_ID || maqdyeqr;
+  const [state, handleSubmit] = useForm(formKey);
 
   if (state.succeeded) {
     return (
